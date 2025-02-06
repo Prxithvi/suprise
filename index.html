@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Be My Valentine?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- First Page -->
+  <div id="page1" class="page">
+    <div id="daisies"></div>
+    <button id="start-button" onclick="showNextPage()">Why You Should Be My Valentine 🌸</button>
+  </div>
+
+  <!-- Second Page -->
+  <div id="page2" class="page hidden">
+    <h1>Thanks for clicking my daisy!</h1>
+    <div class="content">
+      <p>1. Because you are my girlfriend! Do you ask your mom to be your mom on Mother's Day? Huh?</p>
+      <img src="https://via.placeholder.com/300" alt="Photo of us">
+    </div>
+    <button onclick="showNextPage()">Next</button>
+  </div>
+
+  <!-- Third Page -->
+  <div id="page3" class="page hidden">
+    <div class="content">
+      <p>2. You are my best friend, and even though I wanna touch you!</p>
+      <video controls>
+        <source src="your-video-link.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <button onclick="showNextPage()">Next</button>
+  </div>
+
+  <!-- Fourth Page -->
+  <div id="page4" class="page hidden">
+    <div class="content">
+      <p>3. I will always irritate you!</p>
+    </div>
+    <button onclick="showNextPage()">Next</button>
+  </div>
+
+  <!-- Fifth Page -->
+  <div id="page5" class="page hidden">
+    <div class="content">
+      <p>4. I will improve your sarcasm and humor because my humor is funny!</p>
+    </div>
+    <button onclick="showNextPage()">Next</button>
+  </div>
+
+  <!-- Sixth Page -->
+  <div id="page6" class="page hidden">
+    <div class="content">
+      <p>5. My music taste is awesome! But we can listen to Taylor Swift if you want me to. I can do that for you!</p>
+    </div>
+    <button onclick="showNextPage()">Next</button>
+  </div>
+
+  <!-- Seventh Page -->
+  <div id="page7" class="page hidden">
+    <div class="content">
+      <p>6. I will always take care of you.</p>
+      <p>7. I will always sing whatever you want me to.</p>
+      <video controls>
+        <source src="your-music-cover-link.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <button onclick="showNextPage()">Next</button>
+  </div>
+
+  <!-- Final Page -->
+  <div id="page8" class="page hidden">
+    <h1>Thanks for being so patient!</h1>
+    <div class="flowers"></div>
+    <p>Will you be my Valentine, baby girl?</p>
+    <button id="yes-button" onclick="handleYes()">Yes</button>
+    <button id="no-button" onclick="handleNo()">No</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
